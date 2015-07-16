@@ -1,4 +1,4 @@
-# fif
+# finf (files in folder)
 Returns an array of files in a folder
 
 #Usage
