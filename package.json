@@ -1,5 +1,5 @@
 {
-  "name": "fif",
+  "name": "finf",
   "version": "0.0.1",
   "description": "Returns an array of files in a folder",
   "main": "node/index.js",
