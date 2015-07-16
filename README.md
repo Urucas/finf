@@ -1,4 +1,4 @@
-# finf (files in folder)
+# finf (files in folder) [![Build Status](https://travis-ci.org/Urucas/finf.svg)](https://travis-ci.org/Urucas/finf)
 Returns an array of files in a folder
 
 #Usage
