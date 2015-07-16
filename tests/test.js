@@ -1,4 +1,4 @@
-import fif from '../lib/';
+import finf from '../lib/';
 import fp from '../lib/file_pattern';
 
 describe("file_pattern method test", () => {
@@ -29,12 +29,12 @@ describe("file_pattern method test", () => {
 
 });
 
-describe("fif method test", () => {
+describe("finf method test", () => {
   
   // there are 3 files on the dummy folder
   // [file.1.js, file.js.1, file1.js]
   it("should return all the files", (done) => {
-    let [err, list] = fif(process.cwd()+"/tests/dummy/");
+    let [err, list] = finf(process.cwd()+"/tests/dummy/");
     if(err) 
       throw new Error("Shouldnt return an error");
     if(list.length != 3)
@@ -43,7 +43,7 @@ describe("fif method test", () => {
   });
 
   it("should return the filtered files", (done) => {
-    let [err, list] = fif(process.cwd()+"/tests/dummy/", "*.js");
+    let [err, list] = finf(process.cwd()+"/tests/dummy/", "*.js");
     if(err) 
       throw new Error("Shouldnt return an error");
     
@@ -53,7 +53,7 @@ describe("fif method test", () => {
   });
 
   it("should return an error", (done) => {
-    let [err, list] = fif(process.cwd()+"/tests/crash-dummy");
+    let [err, list] = finf(process.cwd()+"/tests/crash-dummy");
     if(err == undefined)
       throw new Error("Should return an error, due to missing folder");
     done();
